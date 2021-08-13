@@ -2,6 +2,8 @@
 /* Default settings; can be overriden by command line. */
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
+static int centered = 0;                    /* -c option; centers dmenu on screen */
+static int min_width = 350;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
     "monospace:size=10",
@@ -10,9 +12,9 @@ static const char *fonts[] = {
 
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][10] = {
-    /*     fg         bg       */
-    [SchemeNorm] = { "#bbbbbb", "#222222", "#222222" },
-    [SchemeSel] = { "#eeeeee", "#005577", "#005577" },
+    		/*     fg         bg       */
+    [SchemeNorm] = { "#ffffff", "#2e3c43", "#2e3c43" },
+    [SchemeSel] = { "#131800", "#81aaff", "#81aaff" },
     [SchemeOut] = { "#000000", "#00ffff", "#00ffff" },
     [SchemeHighlight] = {"#f1fa8c", "#596377", "#3E485B"},
     [SchemeHover] = {"#ffffff", "#353D4B", "#3E485B"},

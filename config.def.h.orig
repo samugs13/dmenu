@@ -10,9 +10,9 @@ static const char *fonts[] = {
 
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][10] = {
-    /*     fg         bg       */
-    [SchemeNorm] = { "#bbbbbb", "#222222", "#222222" },
-    [SchemeSel] = { "#eeeeee", "#005577", "#005577" },
+    		/*     fg         bg       */
+    [SchemeNorm] = { "#ffffff", "#2e3c43", "#2e3c43" },
+    [SchemeSel] = { "#131800", "#81aaff", "#81aaff" },
     [SchemeOut] = { "#000000", "#00ffff", "#00ffff" },
     [SchemeHighlight] = {"#f1fa8c", "#596377", "#3E485B"},
     [SchemeHover] = {"#ffffff", "#353D4B", "#3E485B"},
@@ -36,3 +36,6 @@ static int animated = 0;
  * for example: " /?\"&[]"
  */
 static const char worddelimiters[] = " ";
+
+/* Size of the window border */
+static const unsigned int border_width = 2;
