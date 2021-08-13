@@ -10,7 +10,7 @@ static const char *fonts[] = {
     "Hack Nerd Font:size=12",
 };
 
-static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const char *prompt      ="dmenu";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][10] = {
     		/*     fg         bg       */
     [SchemeNorm] = { "#ffffff", "#2e3c43", "#2e3c43" },
@@ -40,4 +40,4 @@ static int animated = 0;
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 2;
+static const unsigned int border_width = 3;
