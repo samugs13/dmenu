@@ -7,7 +7,7 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 350;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-    "monospace:size=10",
+    "Hack:size=10",
     "Hack Nerd Font:size=12",
 };
 
@@ -15,10 +15,10 @@ static const char *prompt      ="dmenu";      /* -p  option; prompt to the left 
 static const char *colors[SchemeLast][10] = {
     		/*     fg         bg       */
     [SchemeNorm] = { "#ffffff", "#2e3c43", "#2e3c43" },
-    [SchemeSel] = { "#131800", "#81aaff", "#81aaff" },
+    [SchemeSel] = { "#131800", "#99c0d0", "#99c0d0" },
     [SchemeOut] = { "#000000", "#00ffff", "#00ffff" },
     [SchemeHighlight] = {"#f1fa8c", "#596377", "#3E485B"},
-    [SchemeHover] = {"#ffffff", "#353D4B", "#3E485B"},
+    [SchemeHover] = {"#ffffff", "#577899", "#3e485b"},
     [SchemeGreen] = {"#ffffff", "#52E067", "#41b252"},
     [SchemeRed] = {"#ffffff", "#e05252", "#c24343"},
     [SchemeYellow] = {"#ffffff", "#e0c452", "#bca33f"},
