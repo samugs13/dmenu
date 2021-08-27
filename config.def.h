@@ -7,11 +7,11 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 350;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-    "Hack:size=10",
-    "Hack Nerd Font:size=12",
+    "Hack:size=11",
+    "Hack Nerd Font:size=13",
 };
 
-static const char *prompt      ="dmenu";      /* -p  option; prompt to the left of input field */
+static const char *prompt      ="Run:";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][10] = {
     		/*     fg         bg       */
     [SchemeNorm] = { "#ffffff", "#2e3c43", "#2e3c43" },
@@ -28,7 +28,7 @@ static const char *colors[SchemeLast][10] = {
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 
-static unsigned int lineheight = 22; /* -h option; minimum height of a menu line     */
+static unsigned int lineheight = 24; /* -h option; minimum height of a menu line     */
 static unsigned int min_lineheight = 8;
 static int sely = 0;
 static int commented = 0;
